@@ -23,6 +23,7 @@ body {
 	background-attachment: fixed;
 }
 
+
 #particles-js {
 	width: 100%;
 	height:100%;
@@ -51,7 +52,7 @@ header label {
 	width: 30px;
 	height: 30px;
 	padding: 10px;
-	border: 1px solid #fff;
+	/*border: 1px solid #fff;*/
 	position: relative;
 }
 
@@ -105,21 +106,21 @@ header label:hover {
     
 }*/
 
-@media (max-width: 750px) {
+@media screen and (max-width: 800px) {
 	header label{
 		display: block;
 
 	}
     
-
 	.menu {
 		position: absolute;
 		background: #EA1DC8;
-		width: 25%;
+		width: 30%;
 		margin-left: -300%;
-		transition-all: 0.10;
+		transition: all 500ms;
 		float: left;
 		position: relative;
+
 	}
 
 	.menu .ul1 {
@@ -127,20 +128,40 @@ header label:hover {
 	}
 
 	.menu li {
-		border-top: 1px solid #fff;
+		/*border-top: 1px solid #fff;*/
 
 	}
 
+	.menu li a {
+		float: left;
+		padding: 10px 15px;
+
+	}
+   
 
 	#btn-menu:checked ~ .menu {
 		margin: 0;
 
 	}
 
-	aside {
+	.Main1 .articles {
+	width:50%;
+	margin-right:20%;
+	/*float:left;*/
+	/*margin-left: 90px;*/
+}
+
+	/*aside {
 		float: left;
-	}
+	}*/
 }	
+
+@media screen and (max-width: 400px) {
+	.contenedor1{
+		width: 100%
+	}
+}
+
 
 
 /*social red*/
@@ -159,7 +180,7 @@ header label:hover {
 .socialred ul li a{
 	display: inline-block;
 	color: #fff;
-	background: #00abf0;
+	background: #000;
 	padding: 10px 15px;
 	text-decoration: none;
 	transition: all 500ms;
@@ -214,8 +235,64 @@ header label:hover {
 	box-shadow: 5px 5px 0px;*/
 }
 
+/*Reloj - fecha*/
 
-/*Haz lo que sea*/
+/*.wrap {
+	width: 35%;
+	max-width: 1000px;
+	float: right;
+	position: relative;
+
+}
+
+.widget {
+	width: 40%;
+	margin: 2em;
+	margin:32px;
+	position: relative;
+}
+
+.widget p {
+	display: inline-block;
+	line-height: 1em;
+	position: relative;
+}
+
+.fecha {
+	font-family: Oswald, Arial;
+	text-align: center;
+	font-size: 1em;
+	margin-bottom: 0.313rem;
+	background: #29B6F6;
+	padding: 5px;
+	width: 100%;
+	position: relative;
+}
+ 
+ .reloj {
+	 font-family: Oswald, Arial;
+	 width: 100%;
+	 padding:2px;
+	 font-size: 1em;
+	 text-align: center;
+	 background: #29B6F6;
+	 position: relative;
+ }
+
+ .reloj .caja-segundos{
+	 display: inline-block;
+	 position: relative;
+ }
+
+ .reloj .segundos,
+ .reloj .ampm {
+	 font-size: 1rem;
+	 position: relative;
+ }
+
+/*
+
+/*aside detenido*/
 
 /*aside {
 	width:30%;
@@ -281,6 +358,10 @@ footer {
 	margin: auto;
 	/*margin-bottom:15px;*/
 	position: relative;
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
 }
 
 
